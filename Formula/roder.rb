@@ -13,6 +13,6 @@ class Roder < Formula
   end
 
   test do
-    assert_match "Usage:", shell_output("#{bin}/roder --help")
+    assert_match "codex:", shell_output("#{bin}/roder auth status")
   end
 end
