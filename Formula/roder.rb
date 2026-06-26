@@ -1,15 +1,15 @@
 class Roder < Formula
   desc "Rust-native TUI coding agent and event-driven agent harness"
   homepage "https://github.com/RoderAI/roder"
-  url "https://static.crates.io/crates/roder/roder-0.1.0.crate"
-  sha256 "9775a0e807f084e92f897488daf66a3fe492255157d131af59c5dc276e727ea6"
-  license "MIT"
+  url "https://github.com/RoderAI/roder/archive/refs/tags/roder/v0.1.6.tar.gz"
+  version "0.1.6"
+  sha256 "13546fe68115c5187b08b1e04749856c98f0cbe621e64a499463cc4fded395b5"
   head "https://github.com/RoderAI/roder.git", branch: "master"
 
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args
+    system "cargo", "install", *std_cargo_args(path: "crates/roder-cli")
   end
 
   test do
