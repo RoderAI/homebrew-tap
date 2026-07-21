@@ -3,7 +3,7 @@ class Roder < Formula
   homepage "https://github.com/RoderAI/roder"
   url "https://github.com/RoderAI/roder/releases/download/roder%2Fv0.1.15/roder-aarch64-apple-darwin.tar.gz"
   version "0.1.15"
-  sha256 "fc507f2d4c3cd7e9ec2d665130b02115507def6c0ecad159708173240670c9fb"
+  sha256 "b1481adc3160445028849b4ad4394a8cfe7ec55e69214a841f774f374ec39b6d"
   head "https://github.com/RoderAI/roder.git", branch: "master"
 
   option "with-source", "Build from source instead of installing the signed release binary"
