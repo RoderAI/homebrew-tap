@@ -1,9 +1,9 @@
 class Roder < Formula
   desc "Rust-native TUI coding agent and event-driven agent harness"
   homepage "https://github.com/RoderAI/roder"
-  url "https://github.com/RoderAI/roder/releases/download/roder%2Fv0.2.2/roder-aarch64-apple-darwin.tar.gz"
-  version "0.2.2"
-  sha256 "b0d87779989fc73a81ec9a9c2d08162c3101f1e48181ca77c0a107109e034ddc"
+  url "https://github.com/RoderAI/roder/releases/download/roder%2Fv0.2.3/roder-aarch64-apple-darwin.tar.gz"
+  version "0.2.3"
+  sha256 "46dbb2ec02a1e0de882416dbb9637f60ed5f5ebc76e40d999186b233367fa6ab"
   head "https://github.com/RoderAI/roder.git", branch: "master"
 
   option "with-source", "Build from source instead of installing the signed release binary"
@@ -11,8 +11,8 @@ class Roder < Formula
   depends_on "rust" => :build if build.head? || build.with?("source")
 
   resource "source" do
-    url "https://github.com/RoderAI/roder/archive/refs/tags/roder/v0.2.2.tar.gz"
-    sha256 "bd3cad594d4414750e4b371e2913e9cd918bf8e6d61a192d54c1312d53e74c0b"
+    url "https://github.com/RoderAI/roder/archive/refs/tags/roder/v0.2.3.tar.gz"
+    sha256 "37a1c2404a304850f24e6d86368f77d7db9655a478b877fc906aadc5cb4ece7b"
   end
 
   def install
